@@ -11,8 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@Component
-@Primary
+@Component("equipos-espanya")
 public class EquipoServicesEsImpl implements EquipoService{
 
     private List<Equipo> equipos = new ArrayList<>(Arrays.asList(

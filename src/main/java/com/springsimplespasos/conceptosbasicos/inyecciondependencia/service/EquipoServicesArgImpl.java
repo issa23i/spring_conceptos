@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-@Component
+@Component("equipos-argentina")
 public class EquipoServicesArgImpl implements EquipoService{
 
     private List<Equipo> equipos = new ArrayList<>(Arrays.asList(
