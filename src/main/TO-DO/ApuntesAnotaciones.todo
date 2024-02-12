@@ -15,3 +15,8 @@
             se le pone @Component("nombre-descriptivo") y
             cuando inyectemos el servicio con @Autowired también le diremos a qué impl nos referimos
             con el @Qualifier("nombre-descriptivo") igual que llamamos a la implementación.
+
+@ConditionalOnProperty: en caso de haber dos implementacions @Component para el mismo servicio (implementación de la interface),
+                           se especifica en el archivo application.properties ej: app.implementacion=argentina y
+                           en la implementación, además de Component se pone también
+                           @ConditionalOnProperty(prefix = "app", name = "implementacion", havingValue = "argentina")

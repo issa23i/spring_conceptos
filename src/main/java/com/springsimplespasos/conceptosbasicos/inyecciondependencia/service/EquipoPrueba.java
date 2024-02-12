@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
 public class EquipoPrueba implements CommandLineRunner {
 
     @Autowired
-    @Qualifier("equipos-espanya")
+    //@Qualifier("equipos-espanya")
     EquipoService equipoServiceEs;
 
     @Autowired
-    @Qualifier("equipos-argentina")
+    //@Qualifier("equipos-argentina")
     EquipoService equipoServiceAr;
     @Override
     public void run(String... args) throws Exception {
