@@ -1,9 +1,12 @@
 @Autowired: nos permite inyectar un componente o bean (del contenedor). Dicha inyección puede fallar
             al no encontrar un candidato disponible para el tipo solicitado.
             Formas de inyectar: por atributo, setter o constructor.
-            
+
 @Component: es la especificación más genérica para especificar un componente Spring.
 
 @Repository: indica que el componente será ulizado para el acceso a datos.
 @Service: indica que el componente será utilizado para la lógica de negocio.
 @Controller: indica que el componente será utilizado como controlador MVC.
+
+@Primary: en caso de haber dos implementacions @Component para el mismo servicio (implementación de la interface),
+            ademñas de usar @Component, usaremos @Primary

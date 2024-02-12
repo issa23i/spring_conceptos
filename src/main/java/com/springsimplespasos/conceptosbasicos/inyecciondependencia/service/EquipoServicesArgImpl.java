@@ -9,15 +9,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-//@Component
-public class EquipoServicesImplUno implements EquipoService{
+@Component
+public class EquipoServicesArgImpl implements EquipoService{
 
     private List<Equipo> equipos = new ArrayList<>(Arrays.asList(
             new Equipo(1, "River Plate", 1910, LocalDate.of(1910,8,25)),
-            new Equipo(2, "Valencia CF", 1930, LocalDate.of(1930,1,10)),
-            new Equipo(3, "Real Betis Balonpie", 1910, LocalDate.of(1953,9,21)),
-            new Equipo(4, "Sevilla FC", 1910, LocalDate.of(1921,3,11)),
-            new Equipo(5, "Mallorca CF", 1910, LocalDate.of(1955,5,6))
+            new Equipo(2, "Boca Juniors", 1930, LocalDate.of(1930,6,27))
     ));
 
     @Override
